@@ -1,12 +1,11 @@
-x = {"I":0,"S":0,"P":0,"M":0}
-word = "MISSISSIPPI"
-for i in word:
-    if i == "I":
-        x['I'] = x['I']+1
-    elif i == "S":
-        x['S'] = x['S']+1
-    elif i == "P":
-        x['P'] = x['P']+1
-    elif i == "M":
-        x['M'] = x['M']+1
-print(x)
+def word_count(x):
+    dict = {}
+    for n in x:
+      
+        
+        if n in dict.keys():
+            dict[n] += 1
+        else:
+            dict[n] = 1
+    return dict
+print(word_count('MISSISSIPPI'))
